@@ -1,11 +1,13 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="bg-red-600 flex justify-center h-24 m-4 p-5 rounded-2xl">
-    <h1 className="text-3xl font-bold text-white ">
-    New Peoples App Cpy
-  </h1>
+    <div className="App">
+  
+  <Header />
+  <Outlet />
   </div>
   );
 }
