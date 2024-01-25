@@ -10,13 +10,15 @@ function Index(props) {
           Create a Person
         </h2>
         <Form action="/create" method="post">
-          <input type="input" name="name" placeholder="person's name" />
-          <input type="input" name="image" placeholder="person's picture" />
-          <input type="input" name="title" placeholder="person's title" />
+          <input type="text" name="name" placeholder="person's name" />
+          <input type="text" name="image" placeholder="person's picture" />
+          <input type="text" name="title" placeholder="person's title" />
           <input type="submit" value="create person" />
         </Form>
       </div>
-      <div className="flex flex-column flex-wrap justify-center bg-green-900 rounded-lg  m-24 p-4   ">
+
+
+      <div className="flex flex-column flex-wrap justify-center items-center bg-green-900 rounded-lg  m-24 p-4   ">
         {people.map((person) => (
           <div className="flex justify-center ">
             <div className="flex flex-column flex-wrap justify-center items-center bg-green-500 rounded-lg  m-8 p-4 w-96  ">
