@@ -50,7 +50,7 @@ function Index(props) {
                   />
                   <h2>Title: {person.title}</h2>
 
-                  <Link to={`/${person._id}/edit`}>
+                  <Link to={`/${person._id}/update`}>
                     <button
                       type="submit"
                       className="rounded-lg bg-blue-400 p-2"
@@ -60,7 +60,7 @@ function Index(props) {
                   </Link>
                   <Form action={`/delete/${person._id} `} method="post">
                     <button type="submit" className="rounded-lg bg-red-500 p-2">
-                      Delete me
+                      Delete {person.name}
                     </button>
                   </Form>
                 </div>

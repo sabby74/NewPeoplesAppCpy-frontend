@@ -22,7 +22,7 @@ const Update = () => {
 
 
   return (
-    <div>
+    <div className="flex flex-wrap  justify-center items-center bg-blue-800 rounded-lg  m-8 p-4 h-40   ">
       <Form action={`/update/${people._id}`} method="post">
         <input
           type="input"
@@ -45,7 +45,7 @@ const Update = () => {
           onChange={handleChange}
           placeholder="Enter person's title"
         />
-        <input className ="rounded-full p-2 bg-green-200" type="submit" value={`update ${people.name}`} />
+        <input className ="rounded-lg p-2 bg-blue-400" type="submit" value={`update ${people.name}`} />
       </Form>
     </div>
   );

@@ -15,9 +15,8 @@ import {
       <Route path="/" element={<App />}>
         <Route path="" element={<Index />} loader={peopleLoader} />
         <Route path=":id" element={<Show />}loader={showLoader}/>
-        <Route path=":id/edit" element={<Update />}loader={showLoader}/>
+        <Route path=":id/update" element={<Update />}loader={showLoader}/>
         <Route path="create" action={createAction} />
-        <Route path="update/:id" action={updateAction} />
         <Route path="delete/:id" action={deleteAction}/>
       </Route>
     )
