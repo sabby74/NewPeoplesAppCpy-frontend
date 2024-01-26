@@ -5,7 +5,7 @@ function Index(props) {
 
   return (
     <div>
-      <div className="flex flex-wrap  justify-center items-center bg-orange-700 rounded-lg  m-8 p-4 h-40   ">
+      <div className="flex flex-wrap  justify-center items-center bg-orange-600 rounded-lg  m-8 p-4 h-40   ">
         <h2 className=" hover:italic text-bold text-blue-900 text-3xl">
           Create a Person
         </h2>
@@ -31,8 +31,7 @@ function Index(props) {
           <input type="submit" value="create person" />
         </Form>
       </div>
-
-      <div className="flex flex-column flex-wrap justify-center items-center bg-green-900 rounded-lg  m-24 p-4   ">
+      <div className="flex flex-column flex-wrap justify-center items-center rounded-lg  m-24 p-4 bg-gradient-to-r from-green-200 to-transparent border-2  ">
         {people.map((person) => (
           <div className="flex justify-center ">
             <div className="flex flex-column flex-wrap justify-center items-center bg-green-500 rounded-lg  m-8 p-4 w-96  ">
