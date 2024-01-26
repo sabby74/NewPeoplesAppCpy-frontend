@@ -1,6 +1,6 @@
 import { redirect } from "react-router-dom"
 
-const URL = "http://localhost:4040"
+const URL = "https://newpeoplesappcpy.onrender.com"
 
 export const createAction = async ({ request }) => {
   // get data from form
