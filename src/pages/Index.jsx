@@ -10,13 +10,27 @@ function Index(props) {
           Create a Person
         </h2>
         <Form action="/create" method="post">
-          <input className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" type="text" name="name" placeholder="person's name" />
-          <input className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="text" name="image" placeholder="person's picture" />
-          <input className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded" type="text" name="title" placeholder="person's title" />
+          <input
+            className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+            type="text"
+            name="name"
+            placeholder="person's name"
+          />
+          <input
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            type="text"
+            name="image"
+            placeholder="person's picture"
+          />
+          <input
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+            type="text"
+            name="title"
+            placeholder="person's title"
+          />
           <input type="submit" value="create person" />
         </Form>
       </div>
-
 
       <div className="flex flex-column flex-wrap justify-center items-center bg-green-900 rounded-lg  m-24 p-4   ">
         {people.map((person) => (
@@ -37,17 +51,18 @@ function Index(props) {
                   <h2>Title: {person.title}</h2>
 
                   <Link to={`/${person._id}/edit`}>
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                      Edit
+                    <button
+                      type="submit"
+                      className="rounded-lg bg-blue-400 p-2"
+                    >
+                      Edit {person.name}
                     </button>
                   </Link>
-                  <form action={`/${person._id}?_method=DELETE`} method="post">
-                    <input
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                      type="submit"
-                      value="Delete"
-                    />
-                  </form>
+                  <Form action={`/delete/${person._id} `} method="post">
+                    <button type="submit" className="rounded-lg bg-red-500 p-2">
+                      Delete me
+                    </button>
+                  </Form>
                 </div>
               </div>
             </div>
