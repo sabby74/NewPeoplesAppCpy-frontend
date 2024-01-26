@@ -49,18 +49,21 @@ function Index(props) {
                     alt={person.name}
                   />
                   <h2>Title: {person.title}</h2>
+                  <br />
 
                   <Link to={`/${person._id}/update`}>
                     <button
                       type="submit"
                       className="rounded-lg bg-blue-400 p-2"
                     >
-                      Edit {person.name}
+                      Update: {person.name}'s Info
                     </button>
                   </Link>
+                  <br />
+                  <br />
                   <Form action={`/delete/${person._id} `} method="post">
                     <button type="submit" className="rounded-lg bg-red-500 p-2">
-                      Delete {person.name}
+                      Delete: ({person.name})
                     </button>
                   </Form>
                 </div>
