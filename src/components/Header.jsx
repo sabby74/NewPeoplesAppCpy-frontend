@@ -7,12 +7,10 @@ const Header = () => {
     <Link className='hover:italic text-bold text-blue-900 text-3xl'to ="/">
       <div>New Peoples App Cpy</div>
     </Link>
-    <Link className='hover:italic text-bold text-blue-900 text-3xl'to ="/about">
-      <div>about</div>
+    <Link className='hover:italic text-bold text-blue-900 text-3xl'to ="https://portfolio-cl65.onrender.com/">
+      <div>App Developed By</div>
     </Link>
-    <Link className='hover:italic text-bold text-blue-900 text-3xl'to ="/contact">
-      <div>Contact Us</div>
-    </Link>
+    
   </nav>
   )
 }

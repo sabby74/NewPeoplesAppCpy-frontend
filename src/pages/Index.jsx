@@ -31,7 +31,7 @@ function Index(props) {
           <input type="submit" value="create person" />
         </Form>
       </div>
-      <div className="flex flex-column flex-wrap justify-center items-center rounded-lg  m-24 p-4 bg-gradient-to-r from-green-200 to-transparent border-2  ">
+      <div className="flex flex-column flex-wrap justify-center items-center rounded-lg  m-24 p-4 bg-gradient-to-r from-green-100 to-transparent border-4 border-green-300  ">
         {people.map((person) => (
           <div className="flex justify-center ">
             <div className="flex flex-column flex-wrap justify-center items-center bg-green-500 rounded-lg  m-8 p-4 w-96  ">
